@@ -1,0 +1,317 @@
+.Navbar {
+    background-color: #46ACC2;
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  .Navbar__Link {
+    padding-right: 8px;
+  }
+  
+  .Navbar__Items {
+    display: flex;
+  }
+  
+  .Navbar__Items--right {
+    margin-left:auto;
+  }
+  
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+      
+  .Navbar__Items {
+      display:none;
+    }
+      
+  .Navbar__Items--right {
+      margin-left:0;
+    }
+      
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+      
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
+  }
+
+  .Navbar__Link {
+    position: relative;
+    background-color: #46ACC2;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+  }
+  
+  .Navbar__Link:hover {
+    background-color: whitesmoke;
+    border: #46acc2 solid 1px;
+    color: #46ACC2;
+  }
+
+
+/* sign up */
+.container {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    display: none;
+    background: #82c0d3;
+    opacity: .8;
+  }
+  
+  .sign-up-form {
+    width: 80%
+  }
+  
+  .submit {
+    position: relative;
+    background-color: #46ACC2;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+  }
+  
+  .submit:hover {
+    background-color: whitesmoke;
+    border: #46acc2 solid 1px;
+    color: #46ACC2;
+  }
+  
+  
+  .input-text {
+    border-radius: 5px;
+    height: 2rem;
+    width: 60%;
+    font-size: 18px;
+    font-family: monospace;
+    margin: 3px;
+  }
+
+
+
+
+
+
+  /* render anime */
+  .page2{
+      display: none;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #46acc2;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .anime-avatar {
+    justify-self: center;
+    height: 21rem;
+    width: auto;
+  }
+
+  .flip-card {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #46acc2
+  }
+
+  #new-anime-btn {
+    position: relative;
+    background-color: #46ACC2;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 15px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+  }
+  
+  #new-anime-btn:hover {
+    background-color: whitesmoke;
+    border: #46acc2 solid 1px;
+    color: #46ACC2;
+  }
+
+  .new-anime{
+    color: #82c0d3;
+  }
+
+  .new-anime-container {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    display: none;
+    opacity: .8;
+  }
+  .watch-later-btn{
+    position: relative;
+    background-color: #82c0d3;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 12px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+  }
+
+  .watch-later-btn:hover {
+    background-color: whitesmoke;
+    border: #46acc2 solid 1px;
+    color: #46ACC2;
+  }
+
+
+  /* comment*/
+  .view-comments{
+    position: relative;
+    background-color: #82c0d3;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 12px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+  }
+
+  .view-comments:hover {
+    background-color: whitesmoke;
+    border: #46acc2 solid 1px;
+    color: #46ACC2;
+  }
+
+  .comment-container {
+	max-width: 640px;
+	margin: 30px auto;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.comment {
+	display: block;
+	transition: all 1s;
+}
+.commentClicked {
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px
+}
+
+.comment-container textarea {
+	width: 100%;
+	border: none;
+	background: #E8E8E8;
+	padding: 5px 10px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid #016BA8;
+	transition: all 0.5s;
+	margin-top: 15px;
+}
+
+button.primaryContained {
+	background: #46acc2;
+	color: #fff;
+	padding: 10px 10px;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+button.primaryContained:hover {
+    background-color: whitesmoke;
+    border: #46acc2 solid 1px;
+    color: #46ACC2;
+}
+
+.show-comment {
+    background-color: #82c0d3;
+    border-style: outset;
+    max-width: 640px;
+	margin: 30px auto;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
+
+}

@@ -4,12 +4,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APP NAME GOES HERE</title>
-  <script type="text/javascript" src="index.js"></script>
+  <title>AnimeAmor</title>
+  <script type="text/javascript" src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css" >
 </head>
 
 <body>
-  <h1>Write some HTML in this file</h1>
+
+  <!-- <div class="topnav">
+    <a class="active" href="#">Home</a>
+    <a href="#">Anime</a>
+    <a href="#detail">Watch Later List</a>
+    <a href="#login">Log In</a>
+    
+  </div> -->
+  <div class="Navbar">
+    <div class="Navbar__Link Navbar__Link-brand">
+       <bold><em>AnimeAmor</em></bold>
+     </div>
+     <div class="Navbar__Link Navbar__Link-toggle">
+       <i class="fas fa-bars"></i>
+     </div>
+   <nav class="Navbar__Items">
+     <div class="Navbar__Link">
+       Home
+     </div>
+     <div class="Navbar__Link" id="anime">
+       Anime 
+     </div>
+     <div class="Navbar__Link">
+       Watch Later
+     </div>
+   </nav>
+   <nav class="Navbar__Items Navbar__Items--right">
+     <div class="Navbar__Link" id="sign">
+       Sign Up
+     </div>
+     <div class="Navbar__Link">
+       Log In
+     </div>
+   </nav>
+ </div>
+
+
+<div class="page1" id="home"></div>
+
+<div class="page2" id="anime">
+  <div class="new-anime-container">
+    <form class="new-anime-form" >
+      <h3><em>New Anime!</em></h3>
+
+      <input type="text" name="name" value="" placeholder="Enter anime's name..." class="input-text">
+      <br>
+      <input type="text" name="img_url" value="" placeholder="Enter anime's image url..." class="input-text">
+      <br>
+      <input type="text" name="description" value="" placeholder="Enter anime's description..." class="input-text">
+      <br>
+      <input type="text" name="author" value="" placeholder="Enter anime's author..." class="input-text">
+      <br>
+      <input type="submit" name="submit" value="Add Anime" class="submit">
+    </form>
+  </div>
+  <p class="new-anime" style='text-align:center' >Can't find the one you're looking for? You can add it yourself!  <button id='new-anime-btn'>New Anime!</button></p>
+
+  <div id="anime-collection">
+  </div>
+
+  <div class="comment-display">
+    <div class="show-comment"></div>
+    
+    <section id="app">
+      <div class="comment-container">
+        <div class="row">
+          <div class="col-6">
+            <div class="comment">
+          <p v-for="items in item" v-text="items"></p>
+            </div>
+            </div>
+            </div>
+        <div class="row">
+          <div class="col-6">
+        <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+          </div>
+        </div>
+      </div>
+      </section>
+  </div>
+
+</div>
+
+<div class="page3" id="watch-later"></div>
+
+<div class="page4" id="sign-up">
+  <div class="container">
+    <form class="sign-up-form" >
+      <h3>Sign Up!</h3>
+
+      <input type="text" name="name" value="" placeholder="Enter your name..." class="input-text">
+      <br>
+      <input type="text" name="username" value="" placeholder="Enter your username..." class="input-text">
+      <br>
+      <input type="text" name="password" value="" placeholder="Enter your password..." class="input-text">
+      <br>
+      <input type="submit" name="submit" value="Sign Up" class="submit">
+    </form>
+  </div>
+</div>
+     
+
 </body>
 
 </html>
+
+
