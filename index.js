@@ -1,12 +1,13 @@
 // write JS code here
 
 // current user
-let user = {
-    id: 2,
-    name: "Lindsay",
-    username: "NoyuLa",
-    password: "Mementomori"
-}
+let user = null
+// {
+//     id: 2,
+//     name: "Lindsay",
+//     username: "NoyuLa",
+//     password: "Mementomori"
+// }
 // navbar
 function classToggle() {
     const navs = document.querySelectorAll('.Navbar__Items')
