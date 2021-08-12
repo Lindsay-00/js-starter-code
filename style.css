@@ -67,14 +67,24 @@
     color: #46ACC2;
   }
 
+.page1 {
+    display: none;
+    
+/* 
+    width: max-content; */
+    /* Center and scale the image nicely */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
 
 /* sign up */
 .container {
     padding: 1rem;
     width: stretch;
     height: auto;
-    display: none;
-    background: #82c0d3;
+    /* display: none; */
+    /* background: #82c0d3; */
     opacity: .8;
   }
   
@@ -306,12 +316,55 @@ button.primaryContained:hover {
 }
 
 .show-comment {
-    background-color: #82c0d3;
+    
     border-style: outset;
     max-width: 640px;
 	margin: 30px auto;
-	background: #fff;
+	background: #E8E8E8;
 	border-radius: 8px;
 	padding: 20px;
 
 }
+
+.delete-btn{
+    position: relative;
+    background-color: #46ACC2;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 12px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+}
+
+.delete-btn:hover {
+    background-color: whitesmoke;
+    border: #46acc2 solid 1px;
+    color: #46ACC2;
+  }
+
+/* watch */
+.page3{
+    display: none;
+}
+
+.remove-btn{
+    position: relative;
+    background-color: #46ACC2;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 15px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+}
+
+.remove-btn:hover {
+    background-color: whitesmoke;
+    border: #46acc2 solid 1px;
+    color: #46ACC2;
+  }

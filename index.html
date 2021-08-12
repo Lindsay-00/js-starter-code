@@ -26,13 +26,13 @@
        <i class="fas fa-bars"></i>
      </div>
    <nav class="Navbar__Items">
-     <div class="Navbar__Link">
+     <div class="Navbar__Link" id="home">
        Home
      </div>
      <div class="Navbar__Link" id="anime">
        Anime 
      </div>
-     <div class="Navbar__Link">
+     <div class="Navbar__Link" id="later">
        Watch Later
      </div>
    </nav>
@@ -40,15 +40,18 @@
      <div class="Navbar__Link" id="sign">
        Sign Up
      </div>
-     <div class="Navbar__Link">
+     <!-- <div class="Navbar__Link">
        Log In
-     </div>
+     </div> -->
    </nav>
  </div>
 
 
-<div class="page1" id="home"></div>
+<div class="page1" id="home">
+</div>
+  
 
+</img>
 <div class="page2" id="anime">
   <div class="new-anime-container">
     <form class="new-anime-form" >
@@ -85,7 +88,7 @@
         <div class="row">
           <div class="col-6">
         <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
-            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+            <button v-on:click="addItem()" class='primaryContained float-right' id="add-btn" type="submit">Add Comment</button>
           </div>
         </div>
       </div>
@@ -109,7 +112,9 @@
       <br>
       <input type="submit" name="submit" value="Sign Up" class="submit">
     </form>
+    <img class="image" src="https://c.tenor.com/8OHuxjEQfbwAAAAd/hatsune-miku.gif">
   </div>
+  
 </div>
      
 
